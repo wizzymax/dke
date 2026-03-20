@@ -1,96 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Dismass Kilimanjaro Experience — Discover Tanzania</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700;900&display=swap');
-    body { margin:0; padding:0; background-color:#EDE8DF; font-family:'Lato',Arial,sans-serif; }
-    .email-wrapper { background-color:#EDE8DF; padding:30px 0; }
-    .email-container { max-width:620px; margin:0 auto; background-color:#ffffff; }
+    body { margin:0; padding:0; background:#EDE8DF; font-family:'Lato',Arial,sans-serif; }
+    .ew { background:#EDE8DF; padding:30px 0; }
+    .ec { max-width:620px; margin:0 auto; background:#ffffff; }
   </style>
 </head>
 <body>
-<div class="email-wrapper">
-<div class="email-container">
+<div class="ew"><div class="ec">
 
-
-  <!-- ═══════════════════════════════════════
-       HERO — full-width photo + brand overlay
-  ═══════════════════════════════════════════ -->
-  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#0e0e0e;">
+  <!-- HEADER with logo on cream -->
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#EDE8DF;">
     <tr>
-      <td align="center" style="padding:0; line-height:0; font-size:0; position:relative;">
-
-        <!-- ▼▼▼ REPLACE src WITH YOUR HERO PHOTO URL ▼▼▼ -->
-        <!-- Recommended: 620 × 420px — Kilimanjaro summit, wide landscape, or team shot -->
-        <img
-          src="https://images.unsplash.com/photo-1621414050345-53db43f7e7ab?w=620&h=420&fit=crop&crop=center"
-          alt="Dismass Kilimanjaro Experience — Tanzania Adventures"
-          width="620"
-          style="display:block; width:100%; max-width:620px; height:420px; object-fit:cover; object-position:center;"
-        />
-        <!-- ▲▲▲ REPLACE src WITH YOUR HERO PHOTO URL ▲▲▲ -->
-
-        <!-- Full dark overlay for text legibility -->
-        <div style="position:absolute; inset:0;
-                    background:linear-gradient(180deg,
-                      rgba(14,14,14,0.25) 0%,
-                      rgba(14,14,14,0.15) 40%,
-                      rgba(14,14,14,0.75) 80%,
-                      rgba(14,14,14,0.95) 100%);
-                    pointer-events:none;">
-        </div>
-
-        <!-- Logo / brand text centred on photo -->
-        <div style="position:absolute; top:0; left:0; right:0; padding:32px 40px; text-align:center; pointer-events:none;">
-          <img src="data:image/png;base64,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" alt="Dismass Kilimanjaro Experience Logo" width="70" style="display:block; margin:0 auto 10px; width:70px; height:auto;" />
-          <p style="margin:0; font-family:'Lato',Arial,sans-serif; font-size:10px; letter-spacing:6px; color:#c8a96e; text-transform:uppercase; font-weight:700;">
-            Official Newsletter
-          </p>
-        </div>
-
-        <!-- Bottom text on photo -->
-        <div style="position:absolute; bottom:0; left:0; right:0; padding:0 44px 32px; pointer-events:none;">
-          <p style="margin:0 0 6px; font-family:'Lato',Arial,sans-serif; font-size:10px; letter-spacing:5px; color:#c8a96e; text-transform:uppercase; font-weight:700;">Tanzania's Premier Adventure Company</p>
-          <h1 style="margin:0; font-family:'Playfair Display',Georgia,serif; font-size:42px; font-weight:700; color:#ffffff; line-height:1.1;">
-            Dismass Kilimanjaro<br/><em style="color:#c8a96e;">Experience</em>
-          </h1>
-          <div style="margin:14px 0 0; width:50px; height:2px; background:#c8a96e;"></div>
-        </div>
-
+      <td align="center" style="padding:36px 40px 20px;">
+        <img src="data:image/png;base64,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"
+                alt="Dismass Kilimanjaro Experience"
+                width="260" height="88"
+                style="display:block; width:260px; max-width:100%; height:auto; margin:0 auto;" />
+        <p style="margin:14px 0 0; font-family:'Lato',Arial,sans-serif; font-size:10px; letter-spacing:6px; color:#2d4a14; text-transform:uppercase; font-weight:700;">
+          Tanzania's Premier Adventure Company
+        </p>
       </td>
     </tr>
   </table>
-
-  <!-- Tagline bar -->
-  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#0e0e0e;">
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
     <tr>
-      <td align="center" style="padding:18px 40px;">
-        <p style="margin:0; font-family:'Playfair Display',Georgia,serif; font-size:16px; font-style:italic; color:#c8a96e; letter-spacing:1px;">
+      <td align="center" style="background:#2d4a14; padding:14px 20px;">
+        <p style="margin:0; font-family:'Playfair Display',Georgia,serif; font-size:16px; color:#EDE8DF; font-style:italic; letter-spacing:1px;">
           "From Sea Level to the Roof of Africa — We Take You There."
         </p>
       </td>
     </tr>
   </table>
-  <!-- ═══ END HERO ═══ -->
 
+  <!-- HERO PHOTO -->
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+    <tr>
+      <td align="center" style="padding:0; line-height:0; font-size:0; position:relative;">
+        <!-- ▼▼▼ YOUR HERO PHOTO HERE ▼▼▼ -->
+        <img src="https://images.unsplash.com/photo-1621414050345-53db43f7e7ab?w=620&h=400&fit=crop&crop=center"
+             alt="Dismass Kilimanjaro Experience" width="620"
+             style="display:block; width:100%; max-width:620px; height:400px; object-fit:cover;" />
+        <!-- ▲▲▲ YOUR HERO PHOTO HERE ▲▲▲ -->
+        <div style="position:absolute; bottom:0; left:0; right:0; height:150px;
+                    background:linear-gradient(to bottom, rgba(45,74,20,0) 0%, rgba(45,74,20,0.9) 100%);
+                    pointer-events:none;"></div>
+        <div style="position:absolute; bottom:0; left:0; right:0; padding:0 44px 28px; pointer-events:none;">
+          <p style="margin:0 0 4px; font-family:'Lato',Arial,sans-serif; font-size:10px; letter-spacing:5px; color:#a8cc80; text-transform:uppercase; font-weight:700;">Official Newsletter</p>
+          <h1 style="margin:0; font-family:'Playfair Display',Georgia,serif; font-size:36px; color:#ffffff; line-height:1.1;">
+            Discover Tanzania<br/><em style="color:#c8e8a0; font-size:28px;">with Dismass Kilimanjaro Experience</em>
+          </h1>
+        </div>
+      </td>
+    </tr>
+  </table>
 
-  <!-- ═══════════════════════════════════
-       INTRO — WHO WE ARE
-  ════════════════════════════════════════ -->
-  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#fafaf7;">
+  <!-- INTRO -->
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#fafaf5;">
     <tr>
       <td style="padding:52px 52px 44px;">
-        <p style="margin:0 0 6px; font-family:'Lato',Arial,sans-serif; font-size:10px; letter-spacing:5px; color:#c8a96e; text-transform:uppercase; font-weight:700;">
-          Welcome
-        </p>
-        <h2 style="margin:10px 0 22px; font-family:'Playfair Display',Georgia,serif; font-size:30px; font-weight:700; color:#0e0e0e; line-height:1.3;">
+        <p style="margin:0 0 5px; font-family:'Lato',Arial,sans-serif; font-size:10px; letter-spacing:5px; color:#2d4a14; text-transform:uppercase; font-weight:700;">Welcome</p>
+        <h2 style="margin:10px 0 22px; font-family:'Playfair Display',Georgia,serif; font-size:30px; color:#1a1a1a; line-height:1.3;">
           Your adventure starts the moment you contact us
         </h2>
         <p style="margin:0 0 16px; font-family:'Lato',Arial,sans-serif; font-size:15px; color:#444; line-height:1.85;">
-          Dismass Kilimanjaro Experience is a fully licensed Tanzania tour operator based in Arusha, specialising in guided Kilimanjaro climbs, wildlife safaris across the Northern Circuit, and bespoke Zanzibar beach extensions. With over a decade of expertise and a team of certified mountain guides, we deliver safe, memorable, and deeply personal adventures.
+          Dismass Kilimanjaro Experience is a fully licensed Tanzania tour operator based in Arusha, led by the legendary <strong style="color:#2d4a14;">Dismass Mariki</strong> and a team of certified mountain guides dedicated to creating once-in-a-lifetime experiences for their guests.
         </p>
         <p style="margin:0; font-family:'Lato',Arial,sans-serif; font-size:15px; color:#444; line-height:1.85;">
           Whether you are a first-time trekker or a seasoned expedition traveller, we craft each itinerary around you — your pace, your goals, your story.
@@ -98,34 +77,26 @@
       </td>
     </tr>
   </table>
-
-  <!-- DIVIDER -->
-  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#fafaf7;">
-    <tr><td style="padding:0 52px;"><div style="border-top:1px solid #e0d8c8;"></div></td></tr>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#fafaf5;">
+    <tr><td style="padding:0 52px;"><div style="border-top:1px solid #d8d0c0;"></div></td></tr>
   </table>
 
-
-  <!-- ═══════════════════════════════════
-       3 KEY STATS — TRUST SIGNALS
-  ════════════════════════════════════════ -->
-  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#fafaf7;">
+  <!-- STATS -->
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#fafaf5;">
     <tr>
-      <td style="padding:40px 40px 44px;">
+      <td style="padding:36px 40px 44px;">
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
           <tr>
-            <!-- Stat 1 -->
-            <td width="33%" align="center" style="padding:0 10px; border-right:1px solid #e0d8c8;">
-              <p style="margin:0 0 4px; font-family:'Playfair Display',Georgia,serif; font-size:36px; font-weight:700; color:#0e0e0e;">10+</p>
+            <td width="33%" align="center" style="padding:0 10px; border-right:1px solid #d8d0c0;">
+              <p style="margin:0 0 4px; font-family:'Playfair Display',Georgia,serif; font-size:36px; font-weight:700; color:#2d4a14;">10+</p>
               <p style="margin:0; font-family:'Lato',Arial,sans-serif; font-size:11px; color:#888; text-transform:uppercase; letter-spacing:2px;">Years of Experience</p>
             </td>
-            <!-- Stat 2 -->
-            <td width="33%" align="center" style="padding:0 10px; border-right:1px solid #e0d8c8;">
-              <p style="margin:0 0 4px; font-family:'Playfair Display',Georgia,serif; font-size:36px; font-weight:700; color:#0e0e0e;">95%</p>
+            <td width="33%" align="center" style="padding:0 10px; border-right:1px solid #d8d0c0;">
+              <p style="margin:0 0 4px; font-family:'Playfair Display',Georgia,serif; font-size:36px; font-weight:700; color:#2d4a14;">95%</p>
               <p style="margin:0; font-family:'Lato',Arial,sans-serif; font-size:11px; color:#888; text-transform:uppercase; letter-spacing:2px;">Summit Success Rate</p>
             </td>
-            <!-- Stat 3 -->
             <td width="33%" align="center" style="padding:0 10px;">
-              <p style="margin:0 0 4px; font-family:'Playfair Display',Georgia,serif; font-size:36px; font-weight:700; color:#0e0e0e;">5&#9733;</p>
+              <p style="margin:0 0 4px; font-family:'Playfair Display',Georgia,serif; font-size:36px; font-weight:700; color:#2d4a14;">5&#9733;</p>
               <p style="margin:0; font-family:'Lato',Arial,sans-serif; font-size:11px; color:#888; text-transform:uppercase; letter-spacing:2px;">TripAdvisor Rated</p>
             </td>
           </tr>
@@ -134,157 +105,118 @@
     </tr>
   </table>
 
-
-  <!-- ═══════════════════════════════════
-       SERVICES — 3 FEATURE ROWS
-  ════════════════════════════════════════ -->
-
-  <!-- Section heading -->
-  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#0e0e0e;">
+  <!-- SERVICES HEADING -->
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#2d4a14;">
     <tr>
-      <td style="padding:46px 52px 36px; text-align:center;">
-        <p style="margin:0 0 6px; font-family:'Lato',Arial,sans-serif; font-size:10px; letter-spacing:5px; color:#c8a96e; text-transform:uppercase; font-weight:700;">What We Offer</p>
+      <td style="padding:40px 52px 32px; text-align:center;">
+        <p style="margin:0 0 6px; font-family:'Lato',Arial,sans-serif; font-size:10px; letter-spacing:5px; color:#a8cc80; text-transform:uppercase; font-weight:700;">What We Offer</p>
         <h2 style="margin:8px 0 0; font-family:'Playfair Display',Georgia,serif; font-size:28px; color:#ffffff;">Three Ways to Experience Tanzania</h2>
       </td>
     </tr>
   </table>
 
-  <!-- Service 1 — Kilimanjaro Climb -->
-  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#161616;">
+  <!-- SERVICE ROW 1 — Kilimanjaro -->
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#eef4e8;">
     <tr>
-      <!-- Photo cell -->
-      <td width="220" style="padding:0; line-height:0; font-size:0; vertical-align:top;">
-        <!-- ▼▼▼ REPLACE src WITH YOUR KILIMANJARO CLIMB PHOTO ▼▼▼ -->
-        <img
-          src="https://images.unsplash.com/photo-1621414050345-53db43f7e7ab?w=220&h=200&fit=crop&crop=center"
-          alt="Kilimanjaro Summit Climb"
-          width="220"
-          style="display:block; width:220px; height:200px; object-fit:cover;"
-        />
-        <!-- ▲▲▲ REPLACE src WITH YOUR KILIMANJARO CLIMB PHOTO ▲▲▲ -->
+      <td width="200" style="padding:0; line-height:0; font-size:0; vertical-align:top;">
+        <!-- ▼▼▼ REPLACE WITH YOUR CLIMB PHOTO ▼▼▼ -->
+        <img src="https://images.unsplash.com/photo-1621414050345-53db43f7e7ab?w=200&h=190&fit=crop&crop=center"
+             alt="Summit Climb" width="200"
+             style="display:block; width:200px; height:190px; object-fit:cover;" />
       </td>
-      <!-- Text cell -->
-      <td style="padding:28px 30px; vertical-align:middle;">
-        <p style="margin:0 0 4px; font-family:'Lato',Arial,sans-serif; font-size:10px; letter-spacing:4px; color:#c8a96e; text-transform:uppercase; font-weight:700;">&#9650; Summit Climbs</p>
-        <h3 style="margin:6px 0 12px; font-family:'Playfair Display',Georgia,serif; font-size:20px; color:#ffffff;">Conquer Africa's Highest Peak</h3>
-        <p style="margin:0 0 16px; font-family:'Lato',Arial,sans-serif; font-size:13px; color:#aaa; line-height:1.75;">
-          Choose from Machame, Lemosho, or Marangu routes. All climbs include certified guides, porters, park fees, accommodation, and full meals.
+      <td style="padding:26px 28px; vertical-align:middle;">
+        <p style="margin:0 0 4px; font-family:'Lato',Arial,sans-serif; font-size:10px; letter-spacing:4px; color:#2d4a14; text-transform:uppercase; font-weight:700;">&#9650; Summit Climbs</p>
+        <h3 style="margin:6px 0 12px; font-family:'Playfair Display',Georgia,serif; font-size:19px; color:#1a1a1a;">Conquer Africa's Highest Peak</h3>
+        <p style="margin:0 0 14px; font-family:'Lato',Arial,sans-serif; font-size:13px; color:#555; line-height:1.75;">
+          Choose from Machame, Lemosho, or Marangu routes. All climbs include certified guides, porters, park fees, and full meals.
         </p>
         <a href="https://kilimanjaroexperience.com/mount-kilimanjaro-climbing-packages/" target="_blank"
-           style="font-family:'Lato',Arial,sans-serif; font-size:11px; font-weight:700; color:#c8a96e; text-decoration:none; letter-spacing:2px; text-transform:uppercase;">
-          View Climb Packages &rarr;
+           style="font-family:'Lato',Arial,sans-serif; font-size:11px; font-weight:700; color:#2d4a14; text-decoration:none; letter-spacing:2px; text-transform:uppercase;">
+          View Packages &rarr;
         </a>
       </td>
     </tr>
   </table>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="height:1px; background:#c8d8b8;"></td></tr></table>
 
-  <!-- Thin divider between services -->
-  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#0e0e0e;">
-    <tr><td style="padding:1px 0; background:#222;"></td></tr>
-  </table>
-
-  <!-- Service 2 — Safari -->
-  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#161616;">
+  <!-- SERVICE ROW 2 — Safari -->
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#f7f4ee;">
     <tr>
-      <!-- Text cell first this time -->
-      <td style="padding:28px 30px; vertical-align:middle;">
-        <p style="margin:0 0 4px; font-family:'Lato',Arial,sans-serif; font-size:10px; letter-spacing:4px; color:#c8a96e; text-transform:uppercase; font-weight:700;">&#9654; Safari Tours</p>
-        <h3 style="margin:6px 0 12px; font-family:'Playfair Display',Georgia,serif; font-size:20px; color:#ffffff;">Into the Wild — Northern Circuit</h3>
-        <p style="margin:0 0 16px; font-family:'Lato',Arial,sans-serif; font-size:13px; color:#aaa; line-height:1.75;">
-          Private and group safaris to the Serengeti, Ngorongoro Crater, Tarangire, and Lake Manyara. Witness the Great Migration in person.
+      <td style="padding:26px 28px; vertical-align:middle;">
+        <p style="margin:0 0 4px; font-family:'Lato',Arial,sans-serif; font-size:10px; letter-spacing:4px; color:#2d4a14; text-transform:uppercase; font-weight:700;">&#9654; Safari Tours</p>
+        <h3 style="margin:6px 0 12px; font-family:'Playfair Display',Georgia,serif; font-size:19px; color:#1a1a1a;">Into the Wild — Northern Circuit</h3>
+        <p style="margin:0 0 14px; font-family:'Lato',Arial,sans-serif; font-size:13px; color:#555; line-height:1.75;">
+          Private and group safaris to the Serengeti, Ngorongoro Crater, Tarangire, and Lake Manyara. Witness the Great Migration.
         </p>
         <a href="https://kilimanjaroexperience.com/tanzania-safaris/" target="_blank"
-           style="font-family:'Lato',Arial,sans-serif; font-size:11px; font-weight:700; color:#c8a96e; text-decoration:none; letter-spacing:2px; text-transform:uppercase;">
-          View Safari Packages &rarr;
+           style="font-family:'Lato',Arial,sans-serif; font-size:11px; font-weight:700; color:#2d4a14; text-decoration:none; letter-spacing:2px; text-transform:uppercase;">
+          View Safaris &rarr;
         </a>
       </td>
-      <!-- Photo cell -->
-      <td width="220" style="padding:0; line-height:0; font-size:0; vertical-align:top;">
-        <!-- ▼▼▼ REPLACE src WITH YOUR SAFARI PHOTO ▼▼▼ -->
-        <img
-          src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=220&h=200&fit=crop&crop=center"
-          alt="Tanzania Safari"
-          width="220"
-          style="display:block; width:220px; height:200px; object-fit:cover;"
-        />
-        <!-- ▲▲▲ REPLACE src WITH YOUR SAFARI PHOTO ▲▲▲ -->
+      <td width="200" style="padding:0; line-height:0; font-size:0; vertical-align:top;">
+        <!-- ▼▼▼ REPLACE WITH YOUR SAFARI PHOTO ▼▼▼ -->
+        <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=200&h=190&fit=crop&crop=center"
+             alt="Safari" width="200"
+             style="display:block; width:200px; height:190px; object-fit:cover;" />
       </td>
     </tr>
   </table>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="height:1px; background:#c8d8b8;"></td></tr></table>
 
-  <!-- Thin divider -->
-  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#0e0e0e;">
-    <tr><td style="padding:1px 0; background:#222;"></td></tr>
-  </table>
-
-  <!-- Service 3 — Zanzibar -->
-  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#161616;">
+  <!-- SERVICE ROW 3 — Zanzibar -->
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#eef4e8;">
     <tr>
-      <!-- Photo cell -->
-      <td width="220" style="padding:0; line-height:0; font-size:0; vertical-align:top;">
-        <!-- ▼▼▼ REPLACE src WITH YOUR ZANZIBAR PHOTO ▼▼▼ -->
-        <img
-          src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=220&h=200&fit=crop&crop=center"
-          alt="Zanzibar Beach"
-          width="220"
-          style="display:block; width:220px; height:200px; object-fit:cover;"
-        />
-        <!-- ▲▲▲ REPLACE src WITH YOUR ZANZIBAR PHOTO ▲▲▲ -->
+      <td width="200" style="padding:0; line-height:0; font-size:0; vertical-align:top;">
+        <!-- ▼▼▼ REPLACE WITH YOUR ZANZIBAR PHOTO ▼▼▼ -->
+        <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=200&h=190&fit=crop&crop=center"
+             alt="Zanzibar" width="200"
+             style="display:block; width:200px; height:190px; object-fit:cover;" />
       </td>
-      <!-- Text cell -->
-      <td style="padding:28px 30px; vertical-align:middle;">
-        <p style="margin:0 0 4px; font-family:'Lato',Arial,sans-serif; font-size:10px; letter-spacing:4px; color:#c8a96e; text-transform:uppercase; font-weight:700;">&#9784; Zanzibar Beach</p>
-        <h3 style="margin:6px 0 12px; font-family:'Playfair Display',Georgia,serif; font-size:20px; color:#ffffff;">Unwind on the Spice Island</h3>
-        <p style="margin:0 0 16px; font-family:'Lato',Arial,sans-serif; font-size:13px; color:#aaa; line-height:1.75;">
-          Complete your Tanzania adventure with turquoise waters and white-sand beaches. Custom beach extensions available after any climb or safari.
+      <td style="padding:26px 28px; vertical-align:middle;">
+        <p style="margin:0 0 4px; font-family:'Lato',Arial,sans-serif; font-size:10px; letter-spacing:4px; color:#2d4a14; text-transform:uppercase; font-weight:700;">&#9784; Zanzibar Beach</p>
+        <h3 style="margin:6px 0 12px; font-family:'Playfair Display',Georgia,serif; font-size:19px; color:#1a1a1a;">Unwind on the Spice Island</h3>
+        <p style="margin:0 0 14px; font-family:'Lato',Arial,sans-serif; font-size:13px; color:#555; line-height:1.75;">
+          Complete your Tanzania adventure with turquoise waters and white-sand beaches. Custom beach extensions after any climb or safari.
         </p>
         <a href="https://kilimanjaroexperience.com/zanzibar-beach-holiday/" target="_blank"
-           style="font-family:'Lato',Arial,sans-serif; font-size:11px; font-weight:700; color:#c8a96e; text-decoration:none; letter-spacing:2px; text-transform:uppercase;">
-          View Zanzibar Packages &rarr;
+           style="font-family:'Lato',Arial,sans-serif; font-size:11px; font-weight:700; color:#2d4a14; text-decoration:none; letter-spacing:2px; text-transform:uppercase;">
+          View Beach Packages &rarr;
         </a>
       </td>
     </tr>
   </table>
-  <!-- ═══ END SERVICES ═══ -->
 
-
-  <!-- ═══════════════════════════════════
-       WHY CHOOSE US — 4 PILLARS
-  ════════════════════════════════════════ -->
-  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#fafaf7;">
+  <!-- WHY US PILLARS -->
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#fafaf5;">
     <tr>
-      <td style="padding:46px 52px 16px; text-align:center;">
-        <p style="margin:0 0 6px; font-family:'Lato',Arial,sans-serif; font-size:10px; letter-spacing:5px; color:#c8a96e; text-transform:uppercase; font-weight:700;">Why Book With Us</p>
-        <h2 style="margin:8px 0 0; font-family:'Playfair Display',Georgia,serif; font-size:26px; color:#0e0e0e;">The Kilimanjaro Experience Difference</h2>
+      <td style="padding:44px 52px 14px; text-align:center;">
+        <p style="margin:0 0 5px; font-family:'Lato',Arial,sans-serif; font-size:10px; letter-spacing:5px; color:#2d4a14; text-transform:uppercase; font-weight:700;">Why Book With Us</p>
+        <h2 style="margin:8px 0 0; font-family:'Playfair Display',Georgia,serif; font-size:24px; color:#1a1a1a;">The Dismass Kilimanjaro Difference</h2>
       </td>
     </tr>
     <tr>
-      <td style="padding:24px 40px 44px;">
+      <td style="padding:22px 36px 44px;">
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
           <tr>
-            <!-- Pillar 1 -->
             <td width="25%" valign="top" style="padding:0 8px; text-align:center;">
-              <p style="margin:0 0 10px; font-size:28px;">🛡️</p>
-              <p style="margin:0 0 6px; font-family:'Lato',Arial,sans-serif; font-size:12px; font-weight:700; color:#0e0e0e; text-transform:uppercase; letter-spacing:1px;">Licensed &amp; Safe</p>
-              <p style="margin:0; font-family:'Lato',Arial,sans-serif; font-size:11px; color:#777; line-height:1.6;">Fully registered with the Tanzania Tourist Board</p>
+              <div style="width:44px; height:44px; background:#2d4a14; border-radius:50%; margin:0 auto 12px; line-height:44px; font-size:20px; text-align:center;">🛡️</div>
+              <p style="margin:0 0 5px; font-family:'Lato',Arial,sans-serif; font-size:11px; font-weight:700; color:#1a1a1a; text-transform:uppercase; letter-spacing:1px;">Licensed &amp; Safe</p>
+              <p style="margin:0; font-family:'Lato',Arial,sans-serif; font-size:11px; color:#555; line-height:1.6;">Fully registered with the Tanzania Tourist Board</p>
             </td>
-            <!-- Pillar 2 -->
             <td width="25%" valign="top" style="padding:0 8px; text-align:center;">
-              <p style="margin:0 0 10px; font-size:28px;">🧭</p>
-              <p style="margin:0 0 6px; font-family:'Lato',Arial,sans-serif; font-size:12px; font-weight:700; color:#0e0e0e; text-transform:uppercase; letter-spacing:1px;">Expert Guides</p>
-              <p style="margin:0; font-family:'Lato',Arial,sans-serif; font-size:11px; color:#777; line-height:1.6;">Certified, experienced local guides on every route</p>
+              <div style="width:44px; height:44px; background:#2d4a14; border-radius:50%; margin:0 auto 12px; line-height:44px; font-size:20px; text-align:center;">🧭</div>
+              <p style="margin:0 0 5px; font-family:'Lato',Arial,sans-serif; font-size:11px; font-weight:700; color:#1a1a1a; text-transform:uppercase; letter-spacing:1px;">Expert Guides</p>
+              <p style="margin:0; font-family:'Lato',Arial,sans-serif; font-size:11px; color:#555; line-height:1.6;">Certified local guides on every route</p>
             </td>
-            <!-- Pillar 3 -->
             <td width="25%" valign="top" style="padding:0 8px; text-align:center;">
-              <p style="margin:0 0 10px; font-size:28px;">✂️</p>
-              <p style="margin:0 0 6px; font-family:'Lato',Arial,sans-serif; font-size:12px; font-weight:700; color:#0e0e0e; text-transform:uppercase; letter-spacing:1px;">Tailored Plans</p>
-              <p style="margin:0; font-family:'Lato',Arial,sans-serif; font-size:11px; color:#777; line-height:1.6;">Every itinerary built to your schedule and budget</p>
+              <div style="width:44px; height:44px; background:#2d4a14; border-radius:50%; margin:0 auto 12px; line-height:44px; font-size:20px; text-align:center;">✂️</div>
+              <p style="margin:0 0 5px; font-family:'Lato',Arial,sans-serif; font-size:11px; font-weight:700; color:#1a1a1a; text-transform:uppercase; letter-spacing:1px;">Tailored Plans</p>
+              <p style="margin:0; font-family:'Lato',Arial,sans-serif; font-size:11px; color:#555; line-height:1.6;">Every itinerary built to your schedule &amp; budget</p>
             </td>
-            <!-- Pillar 4 -->
             <td width="25%" valign="top" style="padding:0 8px; text-align:center;">
-              <p style="margin:0 0 10px; font-size:28px;">💬</p>
-              <p style="margin:0 0 6px; font-family:'Lato',Arial,sans-serif; font-size:12px; font-weight:700; color:#0e0e0e; text-transform:uppercase; letter-spacing:1px;">24/7 Support</p>
-              <p style="margin:0; font-family:'Lato',Arial,sans-serif; font-size:11px; color:#777; line-height:1.6;">On-the-ground support before and during your trip</p>
+              <div style="width:44px; height:44px; background:#2d4a14; border-radius:50%; margin:0 auto 12px; line-height:44px; font-size:20px; text-align:center;">💬</div>
+              <p style="margin:0 0 5px; font-family:'Lato',Arial,sans-serif; font-size:11px; font-weight:700; color:#1a1a1a; text-transform:uppercase; letter-spacing:1px;">24/7 Support</p>
+              <p style="margin:0; font-family:'Lato',Arial,sans-serif; font-size:11px; color:#555; line-height:1.6;">On-the-ground support before and during your trip</p>
             </td>
           </tr>
         </table>
@@ -292,34 +224,28 @@
     </tr>
   </table>
 
-
-  <!-- ═══════════════════════════════════
-       CTA BANNER
-  ════════════════════════════════════════ -->
-  <table width="100%" cellpadding="0" cellspacing="0" border="0"
-         style="background:linear-gradient(135deg,#0e0e0e 0%,#1e1200 40%,#0e1a10 100%);">
+  <!-- CTA BANNER -->
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#2d4a14;">
     <tr>
-      <td style="padding:52px 52px; text-align:center;">
-        <p style="margin:0 0 6px; font-family:'Lato',Arial,sans-serif; font-size:10px; letter-spacing:5px; color:#c8a96e; text-transform:uppercase; font-weight:700;">
-          Ready to Go?
-        </p>
-        <h2 style="margin:8px 0 12px; font-family:'Playfair Display',Georgia,serif; font-size:34px; color:#ffffff; line-height:1.2;">
+      <td style="padding:50px 52px; text-align:center;">
+        <p style="margin:0 0 6px; font-family:'Lato',Arial,sans-serif; font-size:10px; letter-spacing:5px; color:#a8cc80; text-transform:uppercase; font-weight:700;">Ready to Go?</p>
+        <h2 style="margin:8px 0 12px; font-family:'Playfair Display',Georgia,serif; font-size:32px; color:#ffffff; line-height:1.2;">
           Your Tanzania adventure<br/>is one message away
         </h2>
-        <p style="margin:0 auto 32px; font-family:'Lato',Arial,sans-serif; font-size:14px; color:#aaa; line-height:1.8; max-width:400px;">
+        <p style="margin:0 auto 32px; font-family:'Lato',Arial,sans-serif; font-size:14px; color:#a8cc80; line-height:1.8; max-width:400px;">
           Send us your dates and interests and we'll build a personalised quote within 24 hours — no obligation, no pressure.
         </p>
-        <!-- Two CTAs side by side -->
         <table cellpadding="0" cellspacing="0" border="0" align="center">
           <tr>
             <td style="padding:0 8px;">
               <a href="https://kilimanjaroexperience.com/tours/" target="_blank"
-                 style="display:inline-block; padding:15px 30px; background:#c8a96e; font-family:'Lato',Arial,sans-serif; font-size:12px; font-weight:700; color:#0e0e0e; text-decoration:none; letter-spacing:3px; text-transform:uppercase; border-radius:2px;">
+                 style="display:inline-block; padding:14px 30px; background:#EDE8DF; font-family:'Lato',Arial,sans-serif; font-size:12px; font-weight:700; color:#2d4a14; text-decoration:none; letter-spacing:3px; text-transform:uppercase; border-radius:3px;">
                 Browse All Tours
               </a>
             </td>
             <td style="padding:0 8px;">
-              <a href="mailto:info@kilimanjaroexperience.com" style="display:inline-block; padding:14px 30px; border:1px solid #c8a96e; font-family:'Lato',Arial,sans-serif; font-size:12px; font-weight:700; color:#c8a96e; text-decoration:none; letter-spacing:3px; text-transform:uppercase; border-radius:2px;">&gt;
+              <a href="mailto:info@kilimanjaroexperience.com"
+                 style="display:inline-block; padding:13px 30px; border:1px solid #a8cc80; font-family:'Lato',Arial,sans-serif; font-size:12px; font-weight:700; color:#a8cc80; text-decoration:none; letter-spacing:3px; text-transform:uppercase; border-radius:3px;">
                 Email Us Direct
               </a>
             </td>
@@ -329,54 +255,44 @@
     </tr>
   </table>
 
-
-  <!-- ═══════════════════════════════════
-       TESTIMONIAL
-  ════════════════════════════════════════ -->
-  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#fafaf7;">
+  <!-- TESTIMONIAL -->
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#fafaf5;">
     <tr>
       <td style="padding:52px 52px 44px; text-align:center;">
-        <p style="margin:0 0 18px; font-size:32px; color:#c8a96e;">&ldquo;</p>
-        <p style="margin:0 auto 20px; font-family:'Playfair Display',Georgia,serif; font-size:19px; color:#0e0e0e; line-height:1.8; font-style:italic; max-width:460px;">
-          The entire experience — from the first email to reaching Uhuru Peak — was flawless. Kilimanjaro Experience are true professionals who genuinely care about their clients.
+        <p style="margin:0 0 18px; font-size:32px; color:#2d4a14;">&ldquo;</p>
+        <p style="margin:0 auto 20px; font-family:'Playfair Display',Georgia,serif; font-size:19px; color:#1a1a1a; line-height:1.8; font-style:italic; max-width:460px;">
+          The entire experience — from the first email to reaching Uhuru Peak — was flawless. Dismass and his team are true professionals who genuinely care about their clients.
         </p>
-        <p style="margin:0 0 6px; font-family:'Lato',Arial,sans-serif; font-size:12px; color:#999; letter-spacing:2px; text-transform:uppercase;">
-          &mdash; James T., United Kingdom — Machame Route, 2024
-        </p>
-        <!-- Star rating -->
-        <p style="margin:8px 0 0; font-size:16px; color:#c8a96e; letter-spacing:3px;">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+        <p style="margin:0 0 6px; font-family:'Lato',Arial,sans-serif; font-size:12px; color:#999; letter-spacing:2px; text-transform:uppercase;">&mdash; James T., United Kingdom — Machame Route, 2024</p>
+        <p style="margin:8px 0 0; font-size:16px; color:#2d4a14; letter-spacing:3px;">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
       </td>
     </tr>
   </table>
 
 
-  <!-- ═══════════════════════════════════
-       CONTACT STRIP
-  ════════════════════════════════════════ -->
-  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#e8e0cc;">
+  <!-- CONTACT -->
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#f7f4ee;">
     <tr>
-      <td style="padding:40px 52px; text-align:center;">
-        <p style="margin:0 0 4px; font-family:'Lato',Arial,sans-serif; font-size:10px; letter-spacing:5px; color:#7a5c1e; text-transform:uppercase; font-weight:700;">Get In Touch</p>
-        <h3 style="margin:8px 0 26px; font-family:'Playfair Display',Georgia,serif; font-size:22px; color:#0e0e0e;">We'd love to plan your trip</h3>
+      <td style="padding:42px 52px; text-align:center;">
+        <p style="margin:0 0 4px; font-family:'Lato',Arial,sans-serif; font-size:10px; letter-spacing:5px; color:#2d4a14; text-transform:uppercase; font-weight:700;">Get In Touch</p>
+        <h3 style="margin:8px 0 26px; font-family:'Playfair Display',Georgia,serif; font-size:22px; color:#1a1a1a;">We'd love to plan your trip</h3>
         <table cellpadding="0" cellspacing="0" border="0" align="center">
           <tr>
-            <td width="120" style="padding:0 10px 14px 0; text-align:right; font-family:'Lato',Arial,sans-serif; font-size:13px; color:#666;">&#128231; Email:</td>
-            <td style="padding:0 0 14px 10px; text-align:left; font-family:'Lato',Arial,sans-serif; font-size:13px; font-weight:700;">
-              <a href="mailto:info@kilimanjaroexperience.com" style="color:#7a5c1e; text-decoration:none;">info@kilimanjaroexperience.com</a></span></a>
+            <td width="120" style="padding:0 10px 13px 0; text-align:right; font-family:'Lato',Arial,sans-serif; font-size:13px; color:#555;">&#128231; Email:</td>
+            <td style="padding:0 0 13px 10px; text-align:left; font-family:'Lato',Arial,sans-serif; font-size:13px; font-weight:700;">
+              <a href="mailto:info@kilimanjaroexperience.com" style="color:#2d4a14; text-decoration:none;">info@kilimanjaroexperience.com</a>
             </td>
           </tr>
           <tr>
-            <td width="120" style="padding:0 10px 14px 0; text-align:right; font-family:'Lato',Arial,sans-serif; font-size:13px; color:#666;">&#128222; Phone:</td>
-            <td style="padding:0 0 14px 10px; text-align:left; font-family:'Lato',Arial,sans-serif; font-size:13px; color:#0e0e0e; font-weight:700;">+255 787 369 888</td>
+            <td width="120" style="padding:0 10px 13px 0; text-align:right; font-family:'Lato',Arial,sans-serif; font-size:13px; color:#555;">&#128222; Phone:</td>
+            <td style="padding:0 0 13px 10px; text-align:left; font-family:'Lato',Arial,sans-serif; font-size:13px; color:#1a1a1a; font-weight:700;">
+            <a href="https://wa.me/255787369888" target="_blank" style="color:#25D366; text-decoration:none; font-weight:700;">+255 787 369 888 (WhatsApp)</a>
+              </td>
           </tr>
           <tr>
-            <td width="120" style="padding:0 10px 14px 0; text-align:right; font-family:'Lato',Arial,sans-serif; font-size:13px; color:#666;">&#128205; Location:</td>
-            <td style="padding:0 0 14px 10px; text-align:left; font-family:'Lato',Arial,sans-serif; font-size:13px; color:#0e0e0e; font-weight:700;">Arusha, Tanzania</td>
-          </tr>
-          <tr>
-            <td width="120" style="padding:0 10px 0 0; text-align:right; font-family:'Lato',Arial,sans-serif; font-size:13px; color:#666;">&#127760; Website:</td>
+            <td width="120" style="padding:0 10px 0 0; text-align:right; font-family:'Lato',Arial,sans-serif; font-size:13px; color:#555;">&#127760; Website:</td>
             <td style="padding:0 0 0 10px; text-align:left; font-family:'Lato',Arial,sans-serif; font-size:13px; font-weight:700;">
-              <a href="https://kilimanjaroexperience.com" style="color:#7a5c1e; text-decoration:none;">kilimanjaroexperience.com</a>
+              <a href="https://kilimanjaroexperience.com" style="color:#2d4a14; text-decoration:none;">kilimanjaroexperience.com</a>
             </td>
           </tr>
         </table>
@@ -384,33 +300,35 @@
     </tr>
   </table>
 
-
-  <!-- ═══════════════════════════════════
-       FOOTER
-  ════════════════════════════════════════ -->
-  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#0e0e0e;">
+  <!-- FOOTER -->
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#1e3310;">
     <tr>
-      <td style="padding:32px 52px; text-align:center;">
-        <p style="margin:0 0 6px; font-family:'Playfair Display',Georgia,serif; font-size:17px; color:#c8a96e; letter-spacing:2px;">
-          Kilimanjaro Experience
-        </p>
-        <p style="margin:0 0 6px; font-family:'Lato',Arial,sans-serif; font-size:11px; color:#555; line-height:1.6;">
+      <td style="padding:32px 50px; text-align:center;">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQQAAABYCAYAAAATM4kyAAAoBUlEQVR42u19aXgc1ZX2e+6t3rxgjBeQuiWBMZtZgwIBAq5u2xDF6pZsSGcZIMQQHLaBJEMmZPJ9aSshnwlZmUBCHJaEYSBDQ2xLshEYLLXtsCSIJYsSglkst2wsYxZvUnfXPef70V1yI0teMiTxUu/z6JHUXXWr7q2671nuOecSPBwUSCah02mY0r80bVbkDBZ8WIQmQRAkks0EvGKUfmbFojV/do9LpUBNTWBvBA8OkDcEBw8ZnH/+4SNN0DdHCNdAcJwVUAqy4zgRwDjsCLCCFP2sfdHah4YgEw8eIXjY38lgajz8ca3o9uAIa1LfNqcbQCUEC0FykgDrAIwG6FAimeDz6bEA4BR4lQFfv6J53QseKXiE4GE/h23DymTg2PHIjYGg+m4ux5ssTWscwxtB6o9KOMigDQriMGikAkIC2kQkhwjjU9pHRwqD2fA1Ha09P/NI4cCH9obgwNUMli6FiSYi/+4P6Fsdh7sVgZj52wR1GkHWixCRQhWILiTgVBCmgCQCRi+UepyZDyPACoasT4ePGmmWLtqSsW1Ya9Z4PgWPEDzsd2ZCtCFcr7S6FxAIYzWAW5Sma1nwEAG1/oCuE4MtRDIFQq0Q1JBS2wA0QOQEAhYIqFoYWwMh65ORI0etyyzb8lwyCd3VVe598OCZDB726WdqN9aMATt/DASscL7fuZ00GaXUJFPgNhDqIYhoP203ed5CRCtFsEmU1BAjB6LLBPIXIjpSEf2AWS62LKpmxjgR/eH25jf+ihQI3urDAQflDcEB5zfQAESx8yWfT4fzOfNnUjSDgLHsyNOAHAFBjfapU5w8P0RELezQo5ZfbbGULFKKXgDwTSI6WimKsOBEkHrYceSlQEiPEi7MByDJLk+YeBqCh/3heUpd3eRD+q2+ly2/PsIUzF0i+IPSVCEMv1JKs/CnlFI/MMxjGbLMUqqViEaIiAjLrQA9BZIzIYgQYawwXociS4xUaItmCdPJy5u7u1IpKC9GwdMQPOzb2gH6fbmYL6CPKOT5ZRGqBdFlInKCCJQxPIWIRonwDAL/UjHdqhSNcAqcN46IP6C/SgxhR7ZpixrZ4CMiEDZSAeBD2lLKCF8EAB0d3vvjEYKHfR/C05UiIcLLovBrCB4ToddA4ghwiGN4FUAZISsCQo1TYEMEHwHGGHEM+EQQso4jPwWkjwhEJK8KyX8VCmYzCWIAEI162oFHCB72WWRKE1QIpzgOExE1kOBGEOoAqgDIIcImv0/XMeNj4vAGEen1B5QWAZOCTwQWlHoCQFgr+jwUhUCSA+gIAp1PwAgBKrHDXPDMTo8QPOyT/oMmcCoFBUGEWXLCcq2AvgihVgIbgA7XFl5wjPzWsmgpKbnBUnKp48iLRIDS5DgF+bIinqi0iohgpVbqryJ4WyvaTIR2FmwCYaz9Ro3fG3KPEDzs42jtrAgSUYBAAaXpDn+A7oWSywRYD40/GocCEHGURbeIqC5j6EInr/5FKZptDJ8L4o3MNAksJ5LChcbhTkUUNJBuQE4novEE5HMvG08z8AjBw76OSaH1OQB9AFgYC528XEaEr1k+dYImfEogawDpzfWbTp+fPgeFk7R2rnMEx4jgemKqJOA2FoTYyNMg2ioEn1Y0E4TfCsvbEOl/5plsnzfaHiF42HchSEGVcg02CmQLC/9WRL4YCFr/bRj9psC3akXXieBZAroIOJRIHS2gKwlyCgEXQaERQJZIRgCUBjCZiI4yBfyUQBf5AmoCgNUAkEpBAV7EokcIHvZJ2O4yIMlLWqsxgaA1X2k6rW+7uUZY2n0B62FmuUeBjgfRe7mc+ZmQvECQl0lwDil6VYB3ADwCUXcIy2cV5DciUErL/zMsGQJEQM8D3rLjgQjLG4IDDyR4gghXF/LmLwT8hybMDo3yXbptcyFFiiYK+AQRtJKiiSz0kiJZQ4KRbMQhIh8gG0C4hCDfIks9woZvAFGv36+vdwoCpfAYAEyc6GkHB9y74w3Bgfc87eSEkZQLrCagjxn5UYf4jt22pfBDFnnDZ6nbjODTMPINIfk5AacA5ADYCsExILwiImOI1AiAgyC0B0O+2/q3Ov9FFl3IRnqwJXtiJjOQBu2RgmcyeNhX/QjJJFQmvXErM93q8+sjfX517Lat+QcF8vzIUb7bjJEbieXKoqlAHyLGOwKpAeE9EI4DUZaIGiD8sD+gZ4lBX/928yt/SF+qNY2ExnczGThuzoQ35B4heNiHkU4XYxEOD42+PZdzfktFo79Sa3V3/3bzmLBstvxquiYsFkicFb1OgmOIaTNEqiDyHikaT0SV+ZxZafnUD0Q4xCzs5PmFjf5D7gOgyjQEDx4heNiXtYQiMXTlLdafKRR4gz+gbWEBi7QqS83P5/g3LHQUgQ4loA9E44Rks/apoAAhNrKBRS4hVneRolGWpRqNw4ZEXdmV7sqnUp6p4BGCh/0GTaWIxSeXdL9GRj7m5PkNrZWfgO9oTeMIeACQywC8SITDAIRISV5rBUDGg+RFy1JnCknSOIJichM+276kuzOZhPYyHA9ceBWTDlBkMpBkEnrJoi3rK48bk1bAJEurUwQAs0zSljpBGM8DEgYwSYh+p4hmgLFdBEpbarLPr45llo3MuDjTmn3EtmEtXeqZCgcyvFWGAxzlhVHtRHVckVxHhI8pXXz0IgJmgTAcrclyP3cKvJUID+aMufk3reu7vQKrHiF4OJCec1nJs+mzKo81rM5XoI+yyDEQjANBA9hEil4GYYVjqG1lS/frg0nFgwcPB5C2gNTOfqO5c2t9tXNrfUMe7wkNDx4ObKRSULYNa6gJn0xC2zasoYjDgwcPB4/p6GkCHjx48ODBgwcPHjx48ODBgwcPHjx48ODBw/4ESiahUykodykwtYvlvuG+c88HisuGwxxHpWXGYc/dzXV3eUzZEibZNiwMvWoxcA+pFNRQ9+PBg4c9nPjDkcrektBenkt/h3vwsK9KKG8I/vEQARFBYrOqjhaW+WDkoEQphU1G5J7M4nUvIgWFHRuhyDkN40b7OfiVoBP6dlvb6hx2xA6wHa86V2u5XkCWiGwl4jvbF697WgSYNw/U1ASeHo+c4RAuzrRkv5hKQXV1gdJpmKn1kdmKcHJHa/abO+3VKCAQJJaoukOEl3e09jwyOIzZ7cu0RPgSUepCACBBNm/oR6uWFEOfXdiNNWMU87ehUEECNsATGwOj7+lKdxXgpVPvE/Ci0f4JmDevSMTimCNJUK1IvitQP4TQS8TqgVgifCGawOUqtY/9ASHMNGaLBQCpElGcN7u6AiTfE6XudJj+TRH9RoTOACDz5oG6Srs0M2hsaIR1Q6w+cnlTE7i3F3RuffVYrfEAlJwNAF1lOzqnUlAgwJ4dOUkgDQKaY9u2lU7vmLipFBQRxK4PRxn4AjHPg5ivCclGpeUklCo4JZPF6szE/H0Bv81QXxbIfxLLcYdt3zqyRAaecNoH4BVZ/WeqZ0QikNfbW3p+X/rouRmzap5yjHm4rm7yE+n06i2lpCSxLBLHofcCAVWckCkATRAFHgcg2L6we3mpjZ+57TeVkQpDRvT3OWkofC6WqHq2vWXtn6Jx/k8RWiTAe4PvrUQOTAV8VRFdbiCfoNGrGwEMaAmlqssMosmAbFy+ox/fcttJp2F2hEHL8Uy4f8XiNW8AeAPAinLFyXsjPA3BAxBACqq2Fr5kEv4nFq35swBv9AX6TgcgyTKpDRJdNtkFKajMwuyfiNA+bVbkuWmNVbfFGqoahjIJFTACwGqCzBPI/FhD5HIAjgOeT5CJg9+LdBp8XqL6KEDGL29Zu0yAu0C4GACmTClO3lIZNSqovv+BkG/6rKonp8+KfDuaqP5o+fVLfSAWudki+nGsMXx/rDHyr9NnVY7zTFePEDwMQrILNGnSjklBgEWsC7s9sWjvS0dz9ktSkCsEtJoI/xZNRBaguHpQRibkQOiI9pae5SLUK8APt8Bcq0UdIkTvk862XVTxNcw1ILUu2hD+iFKiADrObqj6cFNTsfhKSarLU82btnS0ZhPM0sRAHyn5SbQ+fEPJZHB9DrKitefRfM6JAbSUQKcZo5bFZh5R472LHiF42IG+dBomnUY+nUZ+akM4BsEEOYw6AVA6Xe7ko51qEpyVjIRqa+FrX9LzUvvi7h8vX7zWFpFzpj0XqXB9BWXmSR4pKE25rwNyQWfr+u2kTQAMp1yryGTg2MkJowCaoRRImK6G4PNKUzeJzB2s3p9Zd9ghANDenF3Rvih7M+e4Hoo+VzIZ3PunGclJY1a1vbmxfXH2geWL114BwjOs9GcASImEPHg+hIPdkYBTo4mqRiHyWSQnG+YLjeYvrPxltr/k9RcAcBwhAGNzOS6q4cnitm3BnJwSCke+FwvjHhC/TKJjRjjrd4JvpVJQHR0DFnqAIKPRBF6O3l4AGwAQsygiGVOmHehMBg76AzeJ0JPLF6+9sfxu7UTkBXtm5Wnp9LoXa+fW+joXdBZCvpEXTmsY8RkAdxqmjQS5AiIry+6Ta2trLaf/zXtjDdV/BXipUjSWjZwphPsAUDQKzmS818HTEA5CzJtXnOTE9DKBlhH4fCUmypAtPiswfeXidU8BxeVC95zRwHYC7jr00HGFMslLHc09z7LIVwCcIlBfEGCshv+ytrbVuaYmSDRabENY/UEIi9xJ6qr8BP06QR50fQM7yqtTD3z8I7c+Qm0tfAAEgnmwrPEAEK/oNAAoc/ra+1jRTwT4mFYyV5S83Bsac2O5htPZ2VlQKFwNyLsA5jAjIcJfzbT0PFPyiXiFWz14GAqpfbc4Ce0nbXr4G+GFjv6TJ5htwzrySCj3Z80aSCYz9BJcMgnd1bXzdyUC0WeeCZowAXrNmiHPp1QKaoi2aah2S58Ndw802I+QTEKfeCLUiSdC7eoebBvWmWeC3GO7ujzNwIMHDx48ePDgwcM+ra7vyoYtK0S6Z+eVMhZ3d+FdZTXubQbg7jIky9vdw7ZpT30Yu2hzt2Nbfv/Yw/t3n0fZdffG/0BlmaAEFB2rKa+YrIc9fYEO0L7sWb/2k4myJyS3B8eQV2X6wHvp96bPct7s6gofY6bVxwsffzz7tvs5yrIIp8+quowN+tpb1qbdjU5mxCdVs86fr7b5H37iidfeKz9+akPlh5ToU+zT1/7XrpbR7ET4EiK80tHc8yyKS78CQOLxihFbSF+eacneXnY/w0tygFY2Vn2Wjbze0ZrNlNriofobjVdOF0WHZZp70kM15mYtzqgPH5MnOX5F67qWXWzQQgBkarwqAbCzorXn0bJ3SeyZNUfooNRrybUsW7ihd7i+2JfVBK338C+5XGHVqkfXveKO41DXshOROq0QZiaHSDRBbYHoFctbXt+wi7EauKfzEtVHWVrqhGUCuDhSilQOLM8vb1m7zCWOg31DmoOOFUuZdyCncJIvoO4q+MxRAOCG+dbWwgLAsYbIz0C4l4B3AKB2fa0GAEc7Z/j8+i4V7Ktwz3Oj7JRRn1QKv+jqmmLtQjITge4ToTkllXngGYRCYx0CvjO1PnI5MBAePJzEk5UN4YuCI6x7QXLV4LbKr2lfVhOEojstrR+KXVgKFR4kEd0MTAN9iKXVQ3Zj5WnpNMxQ9+COoYJ8k4j+j/vZwOfameL3qbtMXh1Xfvz7zAQA6i2+wB+gu7VW80v93UlAuc+FIN9lxldA/BeIvAHhw6EKj0UTkX8DIEOo/i5RSywRudki8xMieUeocF/QCf7Ipwt3knFWCMnMaEPk8VhD5XHpNMzBbkIctJ0npQpOgR1ADYTt1tbC19mJQjQR/haILs710Ukl6UGT3unk0iTIOwV2WJQZQhxtZyNbdndtEbwNxradv9msAWzXFn5sz6w5opRqvNOLnk5DzrogcpgInbVtS+FlyLDLlEXt4x1JiKh7jMO9ktdXAIDdMdyzNw5APmK19OzzD5+YThd3kh6mJ28SpHe4sVVKDZmPkckUJ54oObtvmzNfadRPS0w8vCSdh76W0FYBXu1o7nm2vaVn+fKW7O1k+Gp/QH0vmqhqbHp/ujiV+s7RRGQxIOf2BejC5Quzv8os3vBGW9vqzcsWbuh9snXd0+3N2S8R6H4R9dup8cgZ7s7ZHiEcZBABAbBYhADg2WcnF8kgHr4ehGuNwx9a1dbdVZJmPPg8YaGd31koQHbrVCSIJtp57N/aZk0k0EMQbFaWcy8AHiz13Rc96JdLRKmlRQ2GAkNdx81KhJjGvJW/G5BWED5fikd4H6EN1E1QVGGYbwYhHxrpb0ZqoKbCEOYlOQLKAYCbM1EcIymOkQgN45uQ9s5IrYBG+3KFbxNRgOG/ZBgtp3QpUShlhiaT8Ns2rCdb1z2dz5keQC4fPEbpNEw0Ef4ugOj4YM/0Z9LZvkGOTnLbam9eex9BfmQpPH5uffXYUrg4eYRwMA4AkSAF1da2Omc3RD4N0I1CzukrlvS8YtuwMpn3Jf78XcHkjBbhTWzkM4GQr+68+srLMhk4ZSsXlE6Dz589aaKQOrZjcfeTIIwDhrR7VVMT2I7XHE+gQ55euKGXiH7p8+uKFS9Ezh3O2aYJhypgnQhmWJb6SOyF8IJ0Gsa2dxxbNvn7CMjtTR8HNBOSpCJ+admyDduMw48J5GpXe9iF80dKGZ4m44ZkC/ohCJUTTjoNc16i+ijL0jcK+IbS/bvP0tWmBE3gdBqFZBKaN/d8SwhaK56HYrKV9gjhYIRPW2gCRxvC9ST4qtH80cziDW8kk6Ukn3+0c1dhcmZJT0ff9sJ/+316wXmzqysymWKREdcEKDj5SzWwuCSNh3yGrqQlci4WyPPJJPSGwCHPFPK8ngXXD+ewNCw+FqrJtGRX57Y7lwZCviumxiu/nMnAKeUzlGtEfSTo35uOZjJw7MtqgproHM38WDIJTQo/9vv10XZD1Yd35TtxkU4XJ7Mdrxjv8+ujIbLEJSqXcBT4CmbhQFA1o5jBORzRSG9vMcOTjaSJ8Hn7sppg6dmTRwgHkx+BAJVztkytDx9DQnOkIImVi9et/Yd7m1PFX5bWPgiNAqBChdA1Amy2DP8SgNgdxaxBuy4cASGyvGXtE8U+kBnOTi9qFjSdoX+ZTsN0pbvyTPQ9RUicdUHksFIfqVzqK0KISHxIQWWW9tyf2174ZmiE7/tT68MzOztRKI+zIME2Bvr2wqGrAZB625nJgjefaF3fnU7DdDT3LHHynAXLdYPNj8G2FgB1bn31mKn14WOU0nc5Dv96S/iIn7iT3tUcCJjGDq95PJ19u0R+sltSVnjG51cjsLFw/FDOUI8QDng/gkAsCirCUgAbM2092bo6BP7RS08pVzrD8UMwEgC3ta3ebPJyqT+oz7fjkc+76q7y4VJhemRXL7grYWVk+DwQwgp0eKwhMjWaqP6oFllv+ZQ/FJBPlDQJPUjqBwlqJJrAdXWTA+0tPal8zjzs86vmqTOPOCGTgRMKTdZFMpI+YO80hKKWj8sUybtT45VnR+PV06fGK88W4PekkLSTE0YNKZ0FCgJn+qzKsQE/X6c1NQuku6M5e1Hngs5CuRlQ+qsCCm+V+S2GxcSJRcIgUb1EJKSscZ5T8WDUEEAwwnkSmh8YYV0VTYS/2taG3J5EG/59/BnKj2KpM9g2rMzSbFt/n3OP5aM77XjFeHtmzREAjc+0rl21B8E2QhpXEOh5kDkSRo4kMZNEiAsFfomFrh3KZidWI1hkJAB0j14tqRQUv6svFUGX5fe12XbNoaNHr3YAgEF9BGzf0+FOp2HsmROOAOgMKP1bInUkwVRqqKME1GppNUL3+2ehGOmoBz0sBuB7ctG6TU8uzN5MBjMI6phoQ+QhFKMr3+f4FIiB7JnK72okXHRcgpU5aBOuDuoCKQJAlD/U3rzmnmi8qiI40neL3RB+O9Pc83N3CfIfcR8DHn5DfhCPdCdqMgn9bsC5nrf565XSdzHMc0z04B5NvMaaQ8k49WxMLLN03YvlB0xNVEogYP2PPTtyUmZh9o/lhVSYOEigkQAwoRfcBVAms6bfrgvPtELqT+pQ/nU6jempFFRHJ/plDzUEt/AK6cBnAaxvX9S9YKdj4pGrAPwrgPt3VTCldm6ttXxBZ885DeM+GUDonanxcFNTU883XJJMp2FA9IaInAAA2LNaC0SCiLAQsbUeKFul8TSEg8mPUJBUCqqjde23+/vM90JB34Lz4uGLOjtRGOxE+3uDYfwQjCrjKyy7f8O2XJ+5ODTSalREFZnmtc/ZNqz3lVYbNPEAEBn+lBC2TRy57g+2Dcv9SSahA2PMEseRbcgXA5o6ymISqLiEOcJVpd3gpExbTzafMx/3+VQs1hC5s6kJTIQ+7KFTMZMZWBW4HJBHkknoujoEyn9Dye0+vz7TTkQm7yoeYNI7nVw7F76nmjdtEcY3LU1fc30ir42tLTlTpcXnU5XT6iNh7CY0ecBkYJmWz5neiaE1r6BYoMYjhIMOhWK1ntq5tb6O5rVfyfU7vwgFrYft+soZg51o/xiTgUaUSToGQKva1j25dXPhMrZ4PkrlxnYz8URIrgao1fWHZDJwMhk4vb2gZfdv2GaYH1KaLrHtokd969ZaKtFQUATB8jbdZbuVS9c9lcsV5gRHWHPt+sinAVqttOTKJtWQeO21WgWAp8WrT1cKxzEjnU7DtH0EhXQapq0N+XQaxhj9MBsuEHDFYKIajHhF0SGqLf6V0soKBvHxcpNhpNH3GZYcE30OgNSuH9bEUlOmQGbMmDRGWWoWgFvKllk9QjhYMerlTkkmodubs3MKedPqC1jLptZFzhgUB7CH2KxLEnnvMvIEQSEEt2yZbA2ybGjFkp77Mgt7sgBkuDyJjROnKAAca6g8Tms6lQkPDJ6sA38L/dTyqTEyynwcAEaNeqs0YSQAvJ8QXEKxbViZlnW/6N9uvq999CDAjcTy5u66NWHCe6roNDXXiOCVFUt6inkLO/ohyST0qiXd7xhGMwGXl+IGTPnmMeVwx+DJRetecfKcFcHFAASdnUgmoZcs6X7HOLiGFG6e0VBV2bmgqPEN7FO5Yy9NNDWBnVD+Lhb5/cRQz39iiMAtjxAOHjcCACAaBZcksgrkg59glqd8IdXhetb/hCl6qPOGcOVJOp3tcyUy9mBXogGnVrEQasDdnam81T1J953Qu63oFGO6kg2/t/2I7NNlmsaAtAdAK1qzzxVy/LoiXF8kipHFY0gFiYqEMNiGdpcy25vX3igsi4MjfHMM9Du7G+S2R1fn6+omB5SiTwHyP2WmzU4WnCa5wxfQE9XoqmkAxDUBdmEeCYF+EAjoj8dmVR3d2YnClCnF8VqxJHuPQOY5kA67PnJSZycKJSJhNIEzGThNTZBoIvIDAFNyfYXzy8bqoNw45qB1Kpay+0j4fZNMkAK1Na3O1c6YNHPMqMIqy+fLTJ9Vee65U7pWN5WdZ3iIyakAEoRiiapPski1Ao5RFp3oGOnMtGRvwI7MRmuo0GVFHCJSwT5/wA+8P9dh+KVQ0QBpAMhE1+TPmhgJUQ5XCmNh54JiFN7gc10HnwA/8fnVd2N1VUen012vlgZmFAijS1J48KSQTKZo23d05C7JEX6nLBqxky/EiNIaYMvKlxwT0t/Q/wmfT43KOfyQS8DlTkN3Io4L9KzY2B9ZJyRfBvD4Dt8GtAwq+VeS4mpDaPQdFYUtUyHyULQhfE1HR0+n65RNp7NN0UTVi0rL/GhD5HdK6Glh7mWFkFbqeBZcICK92Kxrn85k+4GBPTXhEcJBAPfFM9T/u4Iz4oz8aPWXchUUTWCkoDqbXnvPtiec7R8XOrXfoM/93gr6Ogq5whno960pO08AQBz9Mx0wS9lIiERtApnnhbUoKqwb8BsCIMG57JNNZS81AMBxzK99Qf2cfq97yx5IqWLlZqhGh2i7e+8BWwvGOBcEQvTKYO1g0ERCLoQ7LIczvtEYkPJa1E1MEtrF9RmAymQ2bj2nrio+wnIGqkC7gTyaEGIRqAK57ZKQ/k2ugNNXNGf/+L7xHmQaFVdI9EdFMBYA3BgDFr5ESgllg6S4dKW78l3A7BmNkZMLUAHXSeg6RNPptYsBLI7OitgsMhlExyohhtBG0ebfS6ZYiXe8Go8ehsbfpcLwAZRJR0Oo8BYAiiYiV9iJyNa6usmBv+NYDr6XYa+xu5iNv6H6kocDccLvSSWdIV6WXU3qgTJd7o9b7muwY3K40mN7SxgDTrK/7QXfuX+l+96ziw+UIysnBEQTkQV2PLJoUD9pb9rd6dhU0RG427HYxTHlz+NvLMPmSUEP/zuU2/AzkpPGGMep5QKty7Su+Qt2XxVpv3uXZsyYdIgTyj9KoCvbW9Z2eWr4/gVv2fEfQAbnza6uiDVGbpNC/i4SOVkRz47Vh2diDzL79he4ocNOqBAlxTe2t6z9k0cGHjwMMgli8cicaQ2R1bFZVV87p2HcaACYlqg6345HHipXsw9AM8wTNh48lJNBNF719VhDZKM9s/K08u/Onn34RDtecfyBarZ5pc09eBhEBnYiUhdNRHo/Gq+oBoDaufAN5Vzchye051/y4OGDko7RROQ30YZwfdEsqAl6I+Nhf4C32esHbENnMpAZ8YpqJn1Sx+nZH9iAzmTeywNArLH6nKOOH/3Fo449pP7YUw/57atdm/tcuzuZLJ6L3ayp7609v4uNV4c8p3ifledMOnZ8/vW/vrtt8L24G8t+7nPAcJvS7o0plEpBRaMDfd+l5rWXffHg4Z8OBQDTEuFToonwV90PpzVEZscaIytjDVWboonIu7GGcEdsVtXRO03+Xdjeg9bMaVfEkdpdOzu+p/f9X0r4sRPh+6c2hGOD2ho+bqO0vj/YbNpLXwMNR2rea+Vhv4Vbc8COV101rbHqVjsRfu78i6ol1hh5yY5XfWlaQ/WUwQQytT78WbsxHC35HiZHG6q+XPb94Fx+NQQJkRvM4/ookknoaEPk4mhj1X+cW189Fjv2Wxxy0u5q4pV/F20If2T67Kp5U+OVZ+90Xtl9DiKenSb5gOO1IfyRaGP19MHHDCa1aDx80fTGyP8tVo0adt9ND/9btdIbgg/SgTCQGEOxhsi9AsRI6BZY/FT7KT1/KEuaodLWcAJAovHIN0C4XIAZBPyAlLqlfXH307W1sNyqTbGGyOV9ATz4TDrbN60+EhZFhzoWvb1yYff6nUgpET5LEc0nRSuZ5SPEeKK9NfvdEuHUiWDTitbs7+zkhFG+QnBmP9MfVzV3d53TUFUZELlipJjvt7au70MKlOwq5RfYNUGMMXcSyGcRXjPM520IjrmgK92Vnzqr5gRic2qmOfsrALAbIp/WCp8XB8+1t2ZvSiah01MgblsDkzwRmU+ET5Gip9lBZ29o9O0TervYrXZt14UjOkRnsMGVBPkDFB0Nllfbm3tuAjzTwSOEfd9cYHt2OEKG2ojw50AueElb2+pcudR0U4rdnYbe6asIF9ifh3IWE2GEOGpO5tG1z9XOha9zAQoXXBA5rBDAtQJcD5KblVJHCyMPkueNkXeUwtvynvWSOsw5Do4eB8WnC2MuRL5GoIAQPhwsBL/W1rY6N+3CcIwLeADQnyCSMwHMsfzq5ELO3CnAYstSdxvHPDAhOObrQBfSaeRdKS5CdyiFNjFYJsBsgB7OtK5dVdwzkX/JRh7VwBIjdK0CnoFSlgifMSGYvRqAdts6p2HcaD+HTtcWXWUMHy3KuiCzeM270URkiYG6bmVL9+sz6sPHOFrNJMK/kMixIvQFgB0RRB3RqVVLut+ZPjtSZwoysqO15xEcWBGfHiEcIGQg9syaw0mbPxLhZ+3N2a+7qm00Cm5qKqZWAwCaiputGJP/qE+rZx5b2L0+1hB5jVl+nWntubF2bq2vc0FnIZqoahSRk0GS0IrGC+NHitWSJ5d0vzYlOcV/uLOlDo7cIYS/QvAqCIcCuBCMW6FpjQi/XUB/W0iFkoZxsVL0YWHpEmA7AT5DuJaM3A6iAoF8RBxqb+45051gdrxivCJ9NQjfYJFHNNEiBsZJXhb7RqojnAK+pBTOFhYHhm5mkikicveKJT2vxBrC32GhFzMt2QcBwG6sPA1MsxTUeAGvBegqBd9Zpc1aMa0+EhbIqVA0XUBHQeQt0vi0sNxChI0C2m5t97c6Iwt1CphLhKDjyL2Z1uzdpWfgEcIHAMsbgg/AUihW3QFpkwbknvbmnq+XirQ6pUIpronAADBjds1ZBS7UCOlnly9cs96OV91EJOuAYsrvqJc7JdoQ/jGYRSu1gUXGC9EF7S1rXy3a01VfR/97c4IjfEf3GeenFvtveaL1te5YInIbWBral/QsnZGcNAZO/kILI9qE8aaA5kPkp0rRqcbI/21vyX4fAOzZkWvBbMGo75tSJWYAMm1W1Q3MMkcYvYD8ItPScyUAijVWn62C/D1hHEXgO9ghn9IUM1rymebsTa4mtDFHownkj8XDlypLXcgsowV4VGnzY+PoGSD++fKW1zdMS0w8nJT/IgFdCsAvQvc5hm62tFzPBjdkWnvutZMTRqlCIMGjC4uUYDuL3NqxKPuY9+Z5GsI+BzdfYVpDZDYLru9oycZcMiiRBbm5/9Pi1aczSR0Rb2Sy0pnFa96NJao+KUCoIE67RXqFZdE32MiVwlgGIsfnp2/nc3JepnXtKtuGtXV0hX806ReVou3s8L0dS3puc59lLBG5ThSdBpHRRFSjCL8XzT9e/kjP76OJyL9bPvWdfE6mrliydmV5heK6usmBfqt/KYtcpZWaoRSugaJcocBXG5gNPlLzSas+EhwDkjxYLVje3J0uOft6RGFeprnn58kktLsL0tR45AzLom+y4XWa9INPNnc/6Urx6Q01H3LYpLSGxYLjFVEPgHvf9I9+oCvdlXd9JgCmilCAFCYR8IoS/OiJ5rXPlTkn1cG+fbtHCPsY3D0Do/HIDxny+OGhnsdRjO8w7st63uzqCu3IHJDUguWBkt2L2rm1vkPe6qls//Wba0oOv+t8lprhGDNfCZ3BwNdF8MtMa/am8n0m4/GKEVtCjsqkN24tc2YWHZSNVZ8ihhQKhfZVbW9uBIDpsyqPFeiXHUcuXtGafcD1TwDFHa/jcZjM8+GvaEvNYSPvEOHu5Yuzd7l9jNVX12ofTgdo1ROL1vzZ/byubnIgr/vHL1+S7SlzqO6aPKcUN1OZOrPmBCsgJ4rIC+2LippP2XgaAGI3RmaRYKTRarnrPHVXH5qavKQpD/umuaCKEi38ndLy3g6ySE4YFUtUfTKaqLrbjkdunJEcO6aMiGmQD2LHefHILDseXmQnwvefW189drhQ4t0tu9XOhQ8pqGkN1VPsePim3Z1z/iWHjxyib4Ovu1NswJBxD6XaBG59iF0JotSOOIZdFznxciQ8DWF/MRli8fClooiVQYdROFkRxQQyWVhWK0stcKVgKlXclXnQMxCkoJJdoLdylZOF1VWkJC9MSztas5lhzhnSkTaohLvsNEmHl6yup14lk+9fHkyloLq6QK50H8KhuvfSutTfYdrcfV88eISwL49hPF4R2qr09whUK5CRivC4Ad+XWVzcNalEHMO+2O6k6+2LfIlIjiOh9vbW7AMf0Maze2pve8t3Hjx8sD6F9ycy7WHmIAHA9OmV46KJSGc0HvmGa097I+rBw36qKZTb1qVNQPbK5rXtmmAsHplT2qT0g0py8uBhj/H/ASy5EeINLSHKAAAAAElFTkSuQmCC"
+                alt="Dismass Kilimanjaro Experience"
+                width="180" height="auto"
+                style="display:block; width:180px; max-width:100%; height:auto; margin:0 auto;" />
+        <p style="margin:14px 0 6px; font-family:'Lato',Arial,sans-serif; font-size:11px; color:#7aa060; line-height:1.6;">
           Arusha, Tanzania &nbsp;|&nbsp; Licensed by the Tanzania Tourist Board
         </p>
-        <!-- Social links -->
-        <p style="margin:14px 0 16px;">
+        <p style="margin:0 0 16px;">
           <a href="https://www.facebook.com/dismasskilimanjaro" target="_blank"
-             style="display:inline-block; margin:0 5px; padding:7px 16px; background:#1877f2; font-family:'Lato',Arial,sans-serif; font-size:11px; font-weight:700; color:#ffffff; text-decoration:none; border-radius:3px; letter-spacing:1px;">
-            Facebook
-          </a>
+             style="display:inline-block; margin:0 4px; padding:6px 14px; background:#1877f2; font-family:'Lato',Arial,sans-serif; font-size:11px; font-weight:700; color:#fff; text-decoration:none; border-radius:3px;">Facebook</a>
           <a href="https://www.instagram.com/dismasskilimanjaro/" target="_blank"
-             style="display:inline-block; margin:0 5px; padding:7px 16px; background:#c13584; font-family:'Lato',Arial,sans-serif; font-size:11px; font-weight:700; color:#ffffff; text-decoration:none; border-radius:3px; letter-spacing:1px;">
-            Instagram
-          </a>
+             style="display:inline-block; margin:0 4px; padding:6px 14px; background:#c13584; font-family:'Lato',Arial,sans-serif; font-size:11px; font-weight:700; color:#fff; text-decoration:none; border-radius:3px;">Instagram</a>
           <a href="https://www.tripadvisor.com/Attraction_Review-g297913-d27163631-Reviews-Dismass_Kilimanjaro_Experience-Arusha_Arusha_Region.html" target="_blank"
-             style="display:inline-block; margin:0 5px; padding:7px 16px; background:#34e0a1; font-family:'Lato',Arial,sans-serif; font-size:11px; font-weight:700; color:#000000; text-decoration:none; border-radius:3px; letter-spacing:1px;">
-            TripAdvisor
-          </a>
+             style="display:inline-block; margin:0 4px; padding:6px 14px; background:#34e0a1; font-family:'Lato',Arial,sans-serif; font-size:11px; font-weight:700; color:#000; text-decoration:none; border-radius:3px;">TripAdvisor</a>
         </p>
-        <p style="margin:0; font-family:'Lato',Arial,sans-serif; font-size:10px; color:#333; line-height:1.8;">
-          You are receiving this email because you have been in contact with Kilimanjaro Experi
+        <p style="margin:0; font-family:'Lato',Arial,sans-serif; font-size:10px; color:#4a6a38; line-height:1.8;">
+          You are receiving this email because you have been in contact with Dismass Kilimanjaro Experience.<br/>
+          <a href="https://kilimanjaroexperience.com" style="color:#7aa060; text-decoration:underline;">Unsubscribe</a> &nbsp;|&nbsp;
+          <a href="https://kilimanjaroexperience.com/privacy" style="color:#7aa060; text-decoration:underline;">Privacy Policy</a><br/><br/>
+          &copy; 2026 Dismass Kilimanjaro Experience. All rights reserved.
+        </p>
+      </td>
+    </tr>
+  </table>
+
+</div></div>
+</body>
+</html>
