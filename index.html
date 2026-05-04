@@ -248,7 +248,6 @@ html,body{width:100%;height:100%;overflow:hidden;background:#0c1a08}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 
 <script>
-(function(){
 'use strict';
 
 /* ── Data ─────────────────────────────────────────────────────────── */
@@ -261,7 +260,8 @@ html,body{width:100%;height:100%;overflow:hidden;background:#0c1a08}
 var PTS = {
   /* ── GATES ─────────────────────────────────────────────────────── */
   machame_gate:   {n:'Machame Gate',    lat:-3.184700,lng:37.221900,elev:1800, t:'gate',  r:'Machame',              ls:'3°11′05″S', ll:'37°13′19″E',d:'Primary entry for the Machame Route on the SW flank (5,906 ft). Park fees paid here before entering the dense rainforest.',routes:['Machame']},
-  londorossi_gate:{n:'Londorossi Gate', lat:-2.961917,lng:37.135000,elev:2100, t:'gate',  r:'Lemosho · N.Route',    ls:'2°57′43″S', ll:'37°08′06″E',d:'Remote western gate for Lemosho and Northern Route (6,890 ft). Vehicle transfer to the Shira Plateau trailhead included.',routes:['Lemosho','N.Route']},   {n:'Marangu Gate',    lat:-3.242583,lng:37.517611,elev:1879, t:'gate',  r:'Marangu · Rongai Descent',ls:'3°14′33″S',ll:'37°31′03″E',d:'Busiest gate on Kilimanjaro (SE flank, 6,162 ft). The Coca-Cola Route — only route with huts. Also the descent exit for Rongai Route.',routes:['Marangu','Rongai']},
+  londorossi_gate:{n:'Londorossi Gate', lat:-2.961917,lng:37.135000,elev:2100, t:'gate',  r:'Lemosho · N.Route',    ls:'2°57′43″S', ll:'37°08′06″E',d:'Remote western gate for Lemosho and Northern Route (6,890 ft). Vehicle transfer to the Shira Plateau trailhead included.',routes:['Lemosho','N.Route']},
+  marangu_gate:   {n:'Marangu Gate',    lat:-3.242583,lng:37.517611,elev:1879, t:'gate',  r:'Marangu · Rongai Descent',ls:'3°14′33″S',ll:'37°31′03″E',d:'Busiest gate on Kilimanjaro (SE flank, 6,162 ft). The Coca-Cola Route — only route with huts. Also the descent exit for Rongai Route.',routes:['Marangu','Rongai']},
   marangu_gate:   {n:'Marangu Gate',    lat:-3.242583,lng:37.517611,elev:1879, t:'gate',  r:'Marangu · Rongai Descent',ls:'3°14′33″S',ll:'37°31′03″E',d:'Busiest gate on Kilimanjaro (SE flank, 6,162 ft). The Coca-Cola Route — only route with huts. Also the descent exit for Rongai Route.',routes:['Marangu','Rongai']},
   rongai_gate:    {n:'Rongai Gate',     lat:-3.116700,lng:37.519700,elev:1950, t:'gate',  r:'Rongai',               ls:'3°07′00″S', ll:'37°31′11″E',d:'Nalemoru Gate — the Rongai trailhead on the NE flank (6,398 ft). Driest and most remote starting point on Kilimanjaro.',routes:['Rongai']},
   umbwe_gate:     {n:'Umbwe Gate',      lat:-3.189861,lng:37.279444,elev:1640, t:'gate',  r:'Umbwe',                ls:'3°11′24″S', ll:'37°16′46″E',d:'Entry for the steepest route on the S flank (5,381 ft). Extremely direct ascent — for experienced and fit mountaineers only.',routes:['Umbwe']},
@@ -1060,11 +1060,11 @@ document.getElementById('km-dl-btn').addEventListener('click',function(){
       window.print();
     });
   }, 1200);
-});
+  }); /* end map.once moveend */
+}); /* end addEventListener */
 
 /* ── Initial view ─────────────────────────────────────────────────── */
 map.fitBounds([[-3.30,37.12],[-2.88,37.70]],{padding:[22,22]});
-})();
 </script>
 
 </body>
