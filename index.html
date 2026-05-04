@@ -27,7 +27,7 @@ html,body{width:100%;height:100%;overflow:hidden;background:#0c1a08}
 .kmlbl-peak{color:#a0c8ff!important;border-color:rgba(160,200,255,.45)!important;font-size:10px!important;font-weight:bold!important;background:rgba(10,22,6,.94)!important;letter-spacing:.8px!important}
 .kmlbl-faint{opacity:.12!important}
 
-      /* Popups */
+/* Popups */
 .kmpop .leaflet-popup-content-wrapper{background:rgba(10,22,6,.97)!important;border:1px solid rgba(184,154,74,.35)!important;border-left:3px solid #B89A4A!important;border-radius:8px!important;box-shadow:0 8px 36px rgba(0,0,0,.7)!important;padding:0!important}
 .kmpop .leaflet-popup-tip-container{display:none!important}
 .kmpop .leaflet-popup-content{margin:0!important}
@@ -261,7 +261,7 @@ html,body{width:100%;height:100%;overflow:hidden;background:#0c1a08}
 var PTS = {
   /* ── GATES ─────────────────────────────────────────────────────── */
   machame_gate:   {n:'Machame Gate',    lat:-3.184700,lng:37.221900,elev:1800, t:'gate',  r:'Machame',              ls:'3°11′05″S', ll:'37°13′19″E',d:'Primary entry for the Machame Route on the SW flank (5,906 ft). Park fees paid here before entering the dense rainforest.',routes:['Machame']},
-  londorossi_gate:{n:'Londorossi Gate', lat:-2.961917,lng:37.135000,elev:2100, t:'gate',  r:'Lemosho · N.Route',    ls:'2°57′43″S', ll:'37°08′06″E',d:'Remote western gate for Lemosho and Northern Route (6,890 ft). Vehicle transfer to the Shira Plateau trailhead included.',routes:['Lemosho','N.Route']},
+  londorossi_gate:{n:'Londorossi Gate', lat:-2.961917,lng:37.135000,elev:2100, t:'gate',  r:'Lemosho · N.Route',    ls:'2°57′43″S', ll:'37°08′06″E',d:'Remote western gate for Lemosho and Northern Route (6,890 ft). Vehicle transfer to the Shira Plateau trailhead included.',routes:['Lemosho','N.Route']},   {n:'Marangu Gate',    lat:-3.242583,lng:37.517611,elev:1879, t:'gate',  r:'Marangu · Rongai Descent',ls:'3°14′33″S',ll:'37°31′03″E',d:'Busiest gate on Kilimanjaro (SE flank, 6,162 ft). The Coca-Cola Route — only route with huts. Also the descent exit for Rongai Route.',routes:['Marangu','Rongai']},
   marangu_gate:   {n:'Marangu Gate',    lat:-3.242583,lng:37.517611,elev:1879, t:'gate',  r:'Marangu · Rongai Descent',ls:'3°14′33″S',ll:'37°31′03″E',d:'Busiest gate on Kilimanjaro (SE flank, 6,162 ft). The Coca-Cola Route — only route with huts. Also the descent exit for Rongai Route.',routes:['Marangu','Rongai']},
   rongai_gate:    {n:'Rongai Gate',     lat:-3.116700,lng:37.519700,elev:1950, t:'gate',  r:'Rongai',               ls:'3°07′00″S', ll:'37°31′11″E',d:'Nalemoru Gate — the Rongai trailhead on the NE flank (6,398 ft). Driest and most remote starting point on Kilimanjaro.',routes:['Rongai']},
   umbwe_gate:     {n:'Umbwe Gate',      lat:-3.189861,lng:37.279444,elev:1640, t:'gate',  r:'Umbwe',                ls:'3°11′24″S', ll:'37°16′46″E',d:'Entry for the steepest route on the S flank (5,381 ft). Extremely direct ascent — for experienced and fit mountaineers only.',routes:['Umbwe']},
@@ -390,68 +390,6 @@ var ROUTES = [
    ]
   }
 ];
-   /* Realistic terrain-following track — dense waypoints from recorded GPS traces */
-   track:[
-    /* Gate → Machame Camp: NE through forest then ridge */
-    [-3.1847,37.2219],[-3.1790,37.2255],[-3.1738,37.2278],[-3.1692,37.2308],[-3.1648,37.2330],
-    [-3.1600,37.2365],[-3.1558,37.2402],[-3.1532,37.2445],[-3.1510,37.2490],[-3.1500,37.2583],
-    /* Machame Camp → Shira Cave: W-NW along ridge ascending to plateau */
-    [-3.1482,37.2601],[-3.1440,37.2634],[-3.1392,37.2656],[-3.1328,37.2661],[-3.1265,37.2659],
-    [-3.1200,37.2660],[-3.1125,37.2663],[-3.1042,37.2664],[-3.0958,37.2666],[-3.0900,37.2667],[-3.0861,37.2667],
-    /* Shira Cave → Lava Tower: E across plateau then NE toward Kibo */
-    [-3.0858,37.2730],[-3.0855,37.2820],[-3.0852,37.2920],[-3.0885,37.3005],[-3.0920,37.3072],[-3.0956,37.3133],
-    /* Lava Tower → Barranco: descend S-SW along valley */
-    [-3.0982,37.3105],[-3.1010,37.3085],[-3.1032,37.3062],[-3.1048,37.3040],[-3.1069,37.3028],
-    /* Barranco → Karanga: traverse E via Breakfast Wall */
-    [-3.1108,37.3082],[-3.1140,37.3130],[-3.1162,37.3185],[-3.1178,37.3245],[-3.1188,37.3305],[-3.1194,37.3369],
-    /* Karanga → Barafu: N up ridge */
-    [-3.1175,37.3405],[-3.1148,37.3435],[-3.1118,37.3455],[-3.1082,37.3465],[-3.1050,37.3472],[-3.1022,37.3483],
-    /* Barafu → Uhuru: NW switchbacks up crater wall */
-    [-3.0998,37.3505],[-3.0972,37.3525],[-3.0948,37.3530],[-3.0920,37.3528],[-3.0895,37.3525],
-    [-3.0865,37.3522],[-3.0835,37.3525],[-3.0805,37.3528],[-3.0780,37.3531],[-3.0756,37.3531]
-   ],
-   descent:[
-    /* Uhuru → Barafu */
-    [-3.0756,37.3531],[-3.0780,37.3531],[-3.0805,37.3528],[-3.0835,37.3525],[-3.0865,37.3522],
-    [-3.0895,37.3525],[-3.0920,37.3528],[-3.0948,37.3530],[-3.0972,37.3525],[-3.0998,37.3505],[-3.1022,37.3483],
-    /* Barafu → Mweka Camp: S then SW via Millennium area */
-    [-3.1055,37.3468],[-3.1088,37.3450],[-3.1118,37.3428],[-3.1150,37.3405],[-3.1183,37.3383],
-    [-3.1218,37.3370],[-3.1258,37.3352],[-3.1298,37.3338],[-3.1340,37.3328],[-3.1390,37.3320],[-3.1453,37.3314],
-    /* Mweka Camp → Mweka Gate: SW descending through forest */
-    [-3.1500,37.3306],[-3.1548,37.3295],[-3.1592,37.3282],[-3.1638,37.3268],[-3.1680,37.3258],
-    [-3.1722,37.3252],[-3.1762,37.3248],[-3.1806,37.3286]
-   ]
-  },
-  {k:'Lemosho',  c:'#B89A4A', dy:'7-8d', pts:['londorossi_gate','lemosho_forest','shira1','moir_hut','lava_tower','barranco','karanga','barafu','uhuru','barafu','mweka_camp','mweka_gate'],
-   track:[
-    /* Londorossi Gate → Forest Camp: NE through dense rainforest */
-    [-3.0456,37.1800],[-3.0498,37.1845],[-3.0535,37.1885],[-3.0570,37.1928],[-3.0600,37.1972],[-3.0628,37.2161],
-    /* Forest Camp → Shira 1: NE ascending to Shira plateau */
-    [-3.0665,37.2185],[-3.0712,37.2198],[-3.0752,37.2212],[-3.0795,37.2228],[-3.0830,37.2258],[-3.0853,37.2289],
-    /* Shira 1 → Moir Hut: E then NE across northern plateau */
-    [-3.0848,37.2380],[-3.0842,37.2480],[-3.0835,37.2580],[-3.0825,37.2680],[-3.0805,37.2780],
-    [-3.0775,37.2878],[-3.0730,37.2965],[-3.0672,37.3040],[-3.0610,37.3095],[-3.0545,37.3128],
-    [-3.0478,37.3168],[-3.0412,37.3210],[-3.0340,37.3235],[-3.0268,37.3248],[-3.0180,37.3252],[-3.0017,37.3253],
-    /* Moir Hut → Lava Tower: SE descending then ascending */
-    [-3.0055,37.3148],[-3.0092,37.3125],[-3.0130,37.3110],[-3.0195,37.3095],[-3.0355,37.3088],
-    [-3.0525,37.3095],[-3.0695,37.3105],[-3.0820,37.3115],[-3.0900,37.3122],[-3.0956,37.3133],
-    /* Lava Tower → Barranco */
-    [-3.0982,37.3105],[-3.1010,37.3085],[-3.1032,37.3062],[-3.1048,37.3040],[-3.1069,37.3028],
-    /* Barranco → Karanga → Barafu → Uhuru: same as Machame southern circuit */
-    [-3.1108,37.3082],[-3.1140,37.3130],[-3.1162,37.3185],[-3.1178,37.3245],[-3.1188,37.3305],[-3.1194,37.3369],
-    [-3.1175,37.3405],[-3.1148,37.3435],[-3.1118,37.3455],[-3.1082,37.3465],[-3.1050,37.3472],[-3.1022,37.3483],
-    [-3.0998,37.3505],[-3.0972,37.3525],[-3.0948,37.3530],[-3.0920,37.3528],[-3.0895,37.3525],
-    [-3.0865,37.3522],[-3.0835,37.3525],[-3.0805,37.3528],[-3.0780,37.3531],[-3.0756,37.3531]
-   ],
-   descent:[
-    [-3.0756,37.3531],[-3.0780,37.3531],[-3.0805,37.3528],[-3.0835,37.3525],[-3.0865,37.3522],
-    [-3.0895,37.3525],[-3.0920,37.3528],[-3.0948,37.3530],[-3.0972,37.3525],[-3.0998,37.3505],[-3.1022,37.3483],
-    [-3.1055,37.3468],[-3.1088,37.3450],[-3.1118,37.3428],[-3.1150,37.3405],[-3.1183,37.3383],
-    [-3.1218,37.3370],[-3.1258,37.3352],[-3.1298,37.3338],[-3.1340,37.3328],[-3.1390,37.3320],[-3.1453,37.3314],
-    [-3.1500,37.3306],[-3.1548,37.3295],[-3.1592,37.3282],[-3.1638,37.3268],[-3.1680,37.3258],
-    [-3.1722,37.3252],[-3.1762,37.3248],[-3.1806,37.3286]
-   ]
-  },
 
 function altColor(e){
   if(e>=5500)return'#f0f5ff';
